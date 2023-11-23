@@ -1,0 +1,11 @@
+2023-11-23 23:47:26,334 - INFO - ------------------------------------------------------------
+2023-11-23 23:47:26,337 - INFO - The test dataset contains 6 samples.
+2023-11-23 23:47:26,776 - INFO - loading pretrained weights from G:\sz_code\TransChem\model_weight\model.pt
+2023-11-23 23:47:26,828 - INFO - Start predict...
+2023-11-23 23:47:28,486 - INFO - test result:
+MAE: 0.57105184
+RMSE: 0.75567973
+R_2: 0.33534
+Ratio_02: 0.16667
+Ratio_01: 0.00000
+
