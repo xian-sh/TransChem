@@ -57,6 +57,8 @@ def load_data_from_df(dataset_path, num, norm_lap=False, add_dummy_node=True, on
             return
 
     data_df = pd.read_csv(dataset_path)
+    if data_df.shape[1] == 1:
+        data_df['y'] = 1.0
 
     if not isinstance(num, str):
         data_x = data_df.iloc[:num, 0].values
