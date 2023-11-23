@@ -1,18 +1,29 @@
 import pandas as pd
 import torch
 import numpy as np
+import os
 
-data_path = r'C:\Users\Lenovo\PycharmProjects\MAT\data\op_high_scoring_redox_potentials.csv'
+#settings-----------------------------------------------------   
+root_dir = './data/ring'              # data root dir 
+data_name = 'xxx.csv'                 # the name of the processing csv filw
+save_train_name = 'xxx_train.csv'     
+save_test_name = 'xxx_test.csv'
 
-# 读取数据
+train_ratio = 0.8
+
+seed = 0                              # randomly shuffle data 
+
+#processing---------------------------------------------------
+data_path = os.path.join(root_dir, data_name)
+save_train_path = os.path.join(root_dir, save_train_name)
+save_test_path = os.path.join(root_dir, save_test_name)
+
 data = pd.read_csv(data_path)
-
-# 随机打乱数据
-data = data.sample(frac=1, random_state=0)
+data = data.sample(frac=1, random_state=seed)
 data = data.reset_index(drop=True)
 
-# 前80%为训练集，后20%为测试集，保存为csv文件
-train_data = data.iloc[:int(len(data) * 0.8), :]
-test_data = data.iloc[int(len(data) * 0.8):, :]
-train_data.to_csv(r'C:\Users\Lenovo\PycharmProjects\MAT\data\train.csv', index=False)
-test_data.to_csv(r'C:\Users\Lenovo\PycharmProjects\MAT\data\test.csv', index=False)
+train_data = data.iloc[:int(len(data) * train_ratio), :]
+test_data = data.iloc[int(len(data) * train_ratio):, :]
+
+train_data.to_csv(save_train_path, index=False)
+test_data.to_csv(save_test_path, index=False)
