@@ -1,0 +1,5 @@
+index,smiles,pred
+0,[CH2]C1=CC=CC=C1,-0.01
+1,C[C](C)C1=CC=CC=C1,0.07
+3,C[C](C)C,0.05
+2,C1([C]C2=CC=CC=C2)=CC=CC=C1,0.05
