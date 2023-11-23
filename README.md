@@ -30,8 +30,8 @@
 
 <!---->
 
-    git clone https://github.com/jayleicn/moment_detr.git
-    cd moment_detr
+    git clone https://github.com/xianHUJINGJING/TransChem.git
+    cd example
 
 1.  Prepare feature files
 
