@@ -23,9 +23,9 @@ TransChem: Data-based prediction of redox potentials via introducing chemical fe
 
 - [LICENSE](#license)
 
-## Getting Started
+### Getting Started
 
-### Prerequisites
+#### Prerequisites
 
 1.  Clone this repo
 
@@ -56,11 +56,11 @@ The PyTorch version we tested is `1.9.0`.
 
 
 
-### Prediction
+#### Prediction
 
     cd example
 
-### Train TransChem on your own dataset
+#### Train TransChem on your own dataset
 
 To train TransChem on your own dataset, please prepare your dataset annotations following the format
 
@@ -72,12 +72,12 @@ Training can be launched by running the following command:
 For more configurable options, please checkout our config file [config.py](config.py).
 
 
-## Acknowledgement
+### Acknowledgement
 
 We thank [Linjie Li](https://scholar.google.com/citations?user=WR875gYAAAAJ&hl=en) for the helpful discussions.
 This code is based on [detr](https://github.com/facebookresearch/detr) and [TVRetrieval XML](https://github.com/jayleicn/TVRetrieval). We used resources from [mdetr](https://github.com/ashkamath/mdetr), [MMAction2](https://github.com/open-mmlab/mmaction2), [CLIP](https://github.com/openai/CLIP), [SlowFast](https://github.com/facebookresearch/SlowFast) and [HERO_Video_Feature_Extractor](https://github.com/linjieli222/HERO_Video_Feature_Extractor). We thank the authors for their awesome open-source contributions.
 
-## LICENSE
+### LICENSE
 
 The annotation files are under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) license, see [./data/LICENSE](data/LICENSE). All the code are under [MIT](https://opensource.org/licenses/MIT) license, see [LICENSE](./LICENSE).
 
