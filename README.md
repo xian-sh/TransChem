@@ -1,6 +1,15 @@
 # TransChem
 
-## Table of Contents
+TransChem: Data-based prediction of redox potentials via introducing chemical features into the transformer architecture
+
+
+![toc](./assets/ToC.png)
+
+
+## Approach
+![model](./assets/mian_model.png)
+
+## Usage
 
 - [Getting Started](#getting-started)
 
