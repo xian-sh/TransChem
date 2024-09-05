@@ -76,6 +76,30 @@ Training can be launched by running the following command:
 
 For more configurable options, please checkout our config file [config.py](config.py).
 
+| **Args** | |
+| ---- |:-------------:| 
+| model | TransChem | 
+| save_dir | ./results | 
+| train_data_path | ./data/ring_train_2w.csv | 
+| test_data_path | ./data/ring_test_2w.csv | 
+| pretained_path | None | 
+| train_num | all | 
+| test_num | all | 
+| pretrained | False | 
+| **noise** | True | 
+| noise_std | 0.0 | 
+| gpu | 0 | 
+| epochs | 230 | 
+| es_patience | 50 | 
+| lr | 0.0001 | 
+| step_size | 10 | 
+| gamma | 0.96 |
+| batch_size | 64 |
+| num_workers | 32 |
+| seed | 42 |
+</br>
+
+
 ### LICENSE
 
 The annotation files are under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) license, see [./data/LICENSE](data/LICENSE). All the code are under [MIT](https://opensource.org/licenses/MIT) license, see [LICENSE](./LICENSE).
