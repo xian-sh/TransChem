@@ -350,14 +350,29 @@ class PositionwiseFeedForward(nn.Module):
 ## Embeddings
 
 class Embeddings(nn.Module):
-    def __init__(self, d_model, d_atom, dropout):
+    def __init__(self, d_model, d_atom, dropout, max_len=5000):
         super(Embeddings, self).__init__()
         self.lut = nn.Linear(d_atom, d_model)
         self.dropout = nn.Dropout(dropout)
+        
+        # Create a positional encoding matrix
+        self.positional_encoding = self._generate_positional_encoding(max_len, d_model)
+    
+    def _generate_positional_encoding(self, max_len, d_model):
+        "Generate a matrix of shape (max_len, d_model) with positional encodings."
+        pe = torch.zeros(max_len, d_model)
+        position = torch.arange(0, max_len, dtype=torch.float).unsqueeze(1)
+        div_term = torch.exp(torch.arange(0, d_model, 2).float() * (-math.log(10000.0) / d_model))
+        pe[:, 0::2] = torch.sin(position * div_term)
+        pe[:, 1::2] = torch.cos(position * div_term)
+        pe = pe.unsqueeze(0)  # Add batch dimension
+        return pe
 
     def forward(self, x):
-        return self.dropout(self.lut(x))
-
+        seq_len = x.size(1)
+        # Add positional encoding to the input embedding
+        pe = self.positional_encoding[:, :seq_len].to(x.device)
+        return self.dropout(self.lut(x) + pe)
 
 if __name__ == '__main__':
 
