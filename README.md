@@ -77,44 +77,44 @@ Training can be launched by running the following command:
 For more configurable options, please checkout our config file [config.py](config.py).
 
 
-| **Training Args** | |
-| ---- |:-------------:| 
-| model | TransChem | 
-| save_dir | ./results | 
-| train_data_path | ./data/ring_train_2w.csv | 
-| test_data_path | ./data/ring_test_2w.csv | 
-| pretained_path | None | 
-| train_num | all | 
-| test_num | all | 
-| pretrained | False | 
-| **noise** | True | 
-| noise_std | 0.0 | 
-| gpu | 0 | 
-| epochs | 230 | 
-| es_patience | 50 | 
-| lr | 0.0001 | 
-| step_size | 10 | 
-| gamma | 0.96 |
-| batch_size | 64 |
-| num_workers | 32 |
-| seed | 42 |
+| **Training Args** | ||
+| ---- |:-------------:| :-------------:| 
+| model | TransChem | # model name |
+| save_dir | ./results | # the folder path where the results are saved |
+| train_data_path | ./data/ring_train_2w.csv | # file path for train data |
+| test_data_path | ./data/ring_test_2w.csv | # file path for test data |
+| pretained_path | None | # path to pre-trained model weights file | 
+| train_num | all | # number of training samples |
+| test_num | all | # number of testing samples | 
+| pretrained | False | # whether to use pre-trained weights | 
+| **noise** | True | # whether to add noise (or PNCGD) |
+| noise_std | 0.2 | # standard deviation of noise |
+| gpu | 0 | # GPU index to use |
+| epochs | 230 | # number of training epochs |
+| es_patience | 50 | # early stopping patience |
+| lr | 0.0001 | # learning rate |
+| step_size | 10 | # step size for learning rate scheduler |
+| gamma | 0.96 | # leaining rate decay factor |
+| batch_size | 64 | # batch size for data loaders |
+| num_workers | 32 | # number of workers for data loading |
+| seed | 42 | # random seed for reproducibility |
 </br>
 
 
-| **Model Args** | |
-| ---- |:-------------:| 
-| d_model | 1024 | 
-| N | 8 | 
-| h | 16 | 
-| N_dense | 1 | 
-| trainable_lambda | False | 
-| lambda_attention | 0.5 | 
-| lambda_distance | 0. | 
-| leaky_relu_slope | 0.1 | 
-| dense_output_nonlinearity | relu | 
-| distance_matrix_kernel | exp | 
-| dropout | 0.1 | 
-| aggregation_type | mean | 
+| **Model Args** | | |
+| ---- |:-------------:| :-------------:| 
+| d_model | 1024 | # model dimensions of feedforward neural networks |
+| N | 8 | # layers  of the model |
+| h | 16 | # number of heads of attention module |
+| N_dense | 1 | # layers of dense networks |
+| trainable_lambda | False | # whether weights of attention and distance matrices etc. are trainable |
+| lambda_attention | 0.5 | # the weights of the attention matrix |
+| lambda_distance | 0. | # the weights of the distance matrix |
+| leaky_relu_slope | 0.1 | # the parameter in LeakyRelu function |
+| dense_output_nonlinearity | relu | # the nonlinearity operation in dense layers |
+| distance_matrix_kernel | exp | # scaling functions in the distance matrix |
+| dropout | 0.1 | # the dropout value |
+| aggregation_type | mean | # the ggregation type of the resultes |
 </br>
 
 
