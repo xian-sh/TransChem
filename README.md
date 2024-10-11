@@ -78,7 +78,7 @@ For more configurable options, please checkout our config file [config.py](confi
 
 
 | **Training Args** | ||
-| ---- |:-------------:| :-------------:| 
+| ---- |:-------------:| -------------:| 
 | model | TransChem | # model name |
 | save_dir | ./results | # the folder path where the results are saved |
 | train_data_path | ./data/ring_train_2w.csv | # file path for train data |
