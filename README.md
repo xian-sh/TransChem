@@ -77,7 +77,7 @@ Training can be launched by running the following command:
 For more configurable options, please checkout our config file [config.py](config.py).
 
 
-| **Training Args** | ||
+| **Training Args** | **Value** | **Interpretation** |
 | ---- |:-------------| :-------------| 
 | model | TransChem | # model name |
 | save_dir | ./results | # the folder path where the results are saved |
@@ -101,7 +101,7 @@ For more configurable options, please checkout our config file [config.py](confi
 </br>
 
 
-| **Model Args** | | |
+| **Model Args** | **Value** | **Interpretation** |
 | ---- |:-------------| :-------------| 
 | d_model | 1024 | # model dimensions of feedforward neural networks |
 | N | 8 | # layers  of the model |
