@@ -2,6 +2,8 @@
 
 **Paper**: TransChem: Data-based prediction of redox potentials via introducing chemical features into the transformer architecture
 
+![paper](https://pubs.acs.org/doi/10.1021/acs.jcim.4c01299)
+
 <div align="center">
   <img src="./assets/ToC.png" alt="Table of Contents" width="500" height="400">
 </div>
