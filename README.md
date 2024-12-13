@@ -4,6 +4,12 @@
 
 [paper](https://pubs.acs.org/doi/10.1021/acs.jcim.4c01299)
 
+## Abstract
+
+Rapid and accurate prediction of basic physicochemical parameters of molecules will greatly accelerate the target-orientated design of novel reactions and materials but has been long challenging. Herein, a chemical language model-based deep learning method, TransChem, has been developed for the prediction of redox potentials of organic molecules. Embedding an effective molecular characterization (combining spatial and electronic features), a nonlinear molecular messaging approach (Mol-Attention), and a perturbation learning method, TransChem, shows high accuracy in predicting the redox potential of organic radicals comprising over 100,000 data (R2 > 0.97, MAE <0.09 V) and is generalized to the smaller 2,1,3-benzothiadiazole data set (<3000 data points) and electron affinity data set (660 data) with low MAE of 0.07 V and 0.18 eV, respectively. In this context, a self-developed data set, i.e., the oxidation potential (OP) of a full-space disubstituted phenol data set (OPP-data set, total set: 74,529), has been predicted by TransChem with a high-throughput, and active learning strategy. The rapid and reliable prediction of OP could hopefully accelerate the screening of plausible reagents in highly selective cross-coupling of phenol derivatives. This study presents an important attempt to guide language modeling with chemical knowledge, while TransChem demonstrates state-of-the-art (SOTA) predictive performance on redox potential prediction benchmark data sets for its better understanding of molecular design and conformational relationships.
+
+
+
 <div align="center">
   <img src="./assets/ToC.png" alt="Table of Contents" width="500" height="400">
 </div>
