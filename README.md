@@ -126,6 +126,25 @@ For more configurable options, please checkout our config file [config.py](confi
 </br>
 
 
+##  Citation
+
+If you found this code useful please consider citing our [paper]([xxxx](https://pubs.acs.org/doi/10.1021/acs.jcim.4c01299)):
+
+    @article{doi:10.1021/acs.jcim.4c01299,
+    author = {Si, Zhan and Liu, Deguang and Nie, Wan and Hu, Jingjing and Wang, Chen and Jiang, Tingting and Yu, Haizhu and Fu, Yao},
+    title = {Data-Based Prediction of Redox Potentials via Introducing Chemical Features into the Transformer Architecture},
+    journal = {Journal of Chemical Information and Modeling},
+    volume = {64},
+    number = {22},
+    pages = {8453-8463},
+    year = {2024},
+    doi = {10.1021/acs.jcim.4c01299},
+    note ={PMID: 39513760},
+    URL = {https://doi.org/10.1021/acs.jcim.4c01299},
+    eprint = {https://doi.org/10.1021/acs.jcim.4c01299}
+    }
+
+
 ### LICENSE
 
 The annotation files are under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) license, see [./data/LICENSE](data/LICENSE). All the code are under [MIT](https://opensource.org/licenses/MIT) license, see [LICENSE](./LICENSE).
