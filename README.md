@@ -128,7 +128,7 @@ For more configurable options, please checkout our config file [config.py](confi
 
 ##  Citation
 
-If you found this code useful please consider citing our [paper]([xxxx](https://pubs.acs.org/doi/10.1021/acs.jcim.4c01299)):
+If you found this code useful please consider citing our [paper](https://pubs.acs.org/doi/10.1021/acs.jcim.4c01299):
 
     @article{doi:10.1021/acs.jcim.4c01299,
     author = {Si, Zhan and Liu, Deguang and Nie, Wan and Hu, Jingjing and Wang, Chen and Jiang, Tingting and Yu, Haizhu and Fu, Yao},
